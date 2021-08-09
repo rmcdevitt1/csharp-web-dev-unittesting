@@ -41,5 +41,15 @@ namespace CarNS
             Odometer += milesAbleToTravel;
         }
 
+        //part5 unittesting TODO: Update the Car class to include an AddGas() method.
+        public void AddGas(double gas)
+        {
+            GasTankLevel += gas;
+            if (GasTankLevel > GasTankSize)
+            {
+                throw new ArgumentOutOfRangeException("Can't exceed tank size");
+            } 
+        }
+
     }
 }
