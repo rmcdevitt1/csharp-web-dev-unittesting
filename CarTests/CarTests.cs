@@ -54,7 +54,7 @@ namespace CarTests
         public void TestGasOverfillException()
         {
             test_car.AddGas(5);
-            Assert.Fail("Shouldn't get here, car cannot have more gas in tank than the size of the tank");
+            Assert.Fail("Shouldn't get here, the car cannot have more gas in the tank than the size of the tank");
         }
     }
 }
